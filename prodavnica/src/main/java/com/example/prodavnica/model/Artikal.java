@@ -45,7 +45,7 @@ public class Artikal implements Serializable {
 	private Set<Stavka> stavke = new HashSet<Stavka>();
 		
 	@ManyToMany(cascade = {CascadeType.ALL})
-	@JoinTable(name="prodajaartikla",
+	@JoinTable(name="prodaja_artikla",
 				joinColumns = {@JoinColumn(name = "id")},
 				inverseJoinColumns = {@JoinColumn(name="prodajaId")}
 			)
